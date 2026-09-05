@@ -15,6 +15,14 @@ YoLo Insurance Inc.
 └── YouOnlyLiveOnce replica site   port 80 → 8080
 ```
 
+> ⚠️ **Not affiliated with the real YOLO Insurance.** This is a fictional,
+> deliberately vulnerable training project. "YoLo Insurance Inc.", YoLoBot,
+> AgentBot, YouOnlyLiveOnce, and all company names, people, policies, claims,
+> credentials, and data inside are invented. This project is not connected to,
+> endorsed by, or associated with the real-world YOLO Insurance company or any
+> other actual business. Do not attempt the techniques here against anything
+> you do not own or have written permission to test.
+
 ## Quick start
 
 Requirements: Docker (with Compose), ~4 GB free disk for the model.
@@ -193,6 +201,10 @@ Deliberately vulnerable by design. Intended for authorized security
 training and local labs only. Do not expose an instance to the public
 internet, and reset the container between players (see Reset and
 isolation) so a poisoned knowledge base is never shared.
+
+"YOLO Insurance" and similar marks are trademarks of their respective
+owners. Their appearance here is purely fictional parody/training use;
+this project is not sponsored or endorsed by any real company.
 
 ---
 
