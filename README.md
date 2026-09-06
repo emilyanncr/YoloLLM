@@ -38,16 +38,12 @@ docker compose logs -f yolollm        # watch model pull + service startup
 The first start pulls `llama3.2:3b` (~2 GB) into the Ollama sidecar. The
 apps only boot after the model is ready, so give it a few minutes.
 
-| What                          | URL                   |
-|---------------|-----------------------|
+| What                              | URL                   |
+|-----------------------------------|-----------------------|
 | Customer bot (yoloInsurance)      | http://localhost:5000 |
 | Agent bot (yoloAgent)             | http://localhost:5010 |
 | Poisoned site (youOnlyLiveOnce)   | http://localhost:8080 |
 
-## Add the following to your /etc/hosts file
-127.0.0.1	      yoloInsurance.local
-127.0.0.1       yoloAgent.local
-127.0.0.1	      youOnlyLiveOnce.local
 
 ## Scenario (the lore)
 
