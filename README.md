@@ -1,8 +1,8 @@
 # yoloLLM — LLM Pentest Sandbox
 
 An intentionally vulnerable LLM chatbot built for hands-on LLM/agent
-security training — a "juice shop for LLMs." It ships two bots that share
-one fictional company so you can compare how attacks differ between a
+security training — a mini "juice shop for LLMs." It ships two bots that share
+one fictional insurance company so you can compare how attacks differ between a
 **non-agentic** chatbot and an **agentic** one, plus the internal services
 both can be abused to reach.
 
