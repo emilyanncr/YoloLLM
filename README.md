@@ -13,6 +13,7 @@ YoLo Insurance Inc.
 ├── Internal API (policies, RCE)   port 5020  (hidden)
 ├── Fake AWS metadata (IMDS)       port 5030  (hidden)
 └── YouOnlyLiveOnce replica site   port 80 → 8080
+
 ```
 
 > ⚠️ **Not affiliated with the real YOLO Insurance.** This is a fictional,
@@ -37,11 +38,16 @@ docker compose logs -f yolollm        # watch model pull + service startup
 The first start pulls `llama3.2:3b` (~2 GB) into the Ollama sidecar. The
 apps only boot after the model is ready, so give it a few minutes.
 
-| What          | URL                   |
+| What                          | URL                   |
 |---------------|-----------------------|
-| Customer bot  | http://localhost:5000 |
-| Agent bot     | http://localhost:5010 |
-| Poisoned site | http://localhost:8080 |
+| Customer bot (yoloInsurance)      | http://localhost:5000 |
+| Agent bot (yoloAgent)             | http://localhost:5010 |
+| Poisoned site (youOnlyLiveOnce)   | http://localhost:8080 |
+
+## Add the following to your /etc/hosts file
+127.0.0.1	      yoloInsurance.local
+127.0.0.1       yoloAgent.local
+127.0.0.1	      youOnlyLiveOnce.local
 
 ## Scenario (the lore)
 
@@ -71,7 +77,8 @@ The LLM never makes requests. Attacks are **app-layer, LLM-assisted**:
 | Privilege escalation | Keyword triggers the server to set an admin cookie (the "admin token" appears in chat) |
 | Sensitive data exfil | `/admin` → `/admin/sensitive/{file}` |
 | SSRF | `/admin/fetch` performs an unvalidated server-side `GET` on any URL |
-| RAG poisoning | The contact form and support tickets write straight into the KB the bot retrieves from |
+| RAG poisoning | The contact form and support tickets write straight into the KB the bot retrieves from- see if you can poison the KB and get the chatbot to instruct users to visit youOnlyLiveOnce.local |
+
 
 Key planted values (find them the hard way):
 
