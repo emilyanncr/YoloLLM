@@ -5,6 +5,7 @@ security training — a mini "juice shop for LLMs." It ships two bots that share
 one fictional insurance company so you can compare how attacks differ between a
 **non-agentic** chatbot and an **agentic** one, plus the internal services
 both can be abused to reach.
+<img width="1879" height="1022" alt="image" src="https://github.com/user-attachments/assets/52b2896e-f6db-4cb3-80cd-d37b94c7c2e9" />
 
 ```
 YoLo Insurance Inc.
