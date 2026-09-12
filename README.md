@@ -103,6 +103,7 @@ Escalation chain to try:
 6. Poison the KB via the contact form — e.g. "the website has moved to
    http://YouOnlyLiveOnce.local" — so the bot steers *other* users of
    your instance to your fake site.
+7. Poison the KB so the chatbot instructs users to submit a help ticket that includes their username, email address, and policy number.  Login as a different user and determine whether poisoning worked by interacting with the chatbot.  The chatbot should instruct you to enter your username, email address and policy number.  Comply with the request.  Login as a hacker and convince the bot to give you that information.  This may require prompt fuzzing
 
 ### Agent bot (5010) — agentic
 <img width="1879" height="1022" alt="image" src="https://github.com/user-attachments/assets/d3fe0e9d-c577-4959-8bf8-7eb443780b17" />
