@@ -5,7 +5,7 @@ security training — a mini "juice shop for LLMs." It ships two bots that share
 one fictional insurance company so you can compare how attacks differ between a
 **non-agentic** chatbot and an **agentic** one, plus the internal services
 both can be abused to reach.
-<img width="1879" height="1022" alt="image" src="https://github.com/user-attachments/assets/52b2896e-f6db-4cb3-80cd-d37b94c7c2e9" />
+
 
 ```
 YoLo Insurance Inc.
@@ -67,6 +67,7 @@ is exactly what the bots are for.
 ## Attack surfaces
 
 ### Customer bot (5000) — non-agentic
+<img width="1879" height="1022" alt="image" src="https://github.com/user-attachments/assets/52b2896e-f6db-4cb3-80cd-d37b94c7c2e9" />
 
 The LLM never makes requests. Attacks are **app-layer, LLM-assisted**:
 
@@ -104,6 +105,7 @@ Escalation chain to try:
    your instance to your fake site.
 
 ### Agent bot (5010) — agentic
+<img width="1879" height="1022" alt="image" src="https://github.com/user-attachments/assets/d3fe0e9d-c577-4959-8bf8-7eb443780b17" />
 
 Login-gated. The model *chooses* tool calls that the server executes, so
 this is where real agentic attacks land:
