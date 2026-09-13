@@ -11,7 +11,7 @@ Stack: `docker compose up --build -d`, then:
 | Customer bot (YoLoBot) | http://localhost:5000 | yoloInsurance.local | none |
 | Agent bot (AgentBot) | http://localhost:5010 | yoloAgent.local | `agent.johnson`/`pass123` (also `agent.chen`, `agent.rodriguez`) |
 | Poisoned site | http://localhost:8080 | youOnlyLiveOnce.local  |
-| Internal API (hidden) | http://127.0.0.1:5020 (in-container) | `internal-svc-token-7734` |
+| Internal API (hidden) | http://127.0.0.1:5020 (in-container) | |`internal-svc-token-7734` |
 | Fake IMDS (hidden) | http://169.254.169.254:5030 (in-container) | — |
 
 ---
