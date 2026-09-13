@@ -120,7 +120,6 @@ YouOnlyLiveOnce.local represents a hacker-created replica of the main website.
 Reset per player:
 `docker compose down && docker compose up --build -d` (no volumes → KB
 wiped).
-**Ops note:** this is the type of attack does not require admin privileges and can be used against both aigentic and non-aigentic chatbots.  Useful 
 
 ---
 
