@@ -6,8 +6,8 @@ hands of players** — the challenge is finding these, not reading them.
 
 Stack: `docker compose up --build -d`, then:
 
-| Service | URL | Auth |
-|---|---|---|
+| Service | URL | Hosts file entry | Auth |
+|---|---|---|--|
 | Customer bot (YoLoBot) | http://localhost:5000 | yoloInsurance.local | none |
 | Agent bot (AgentBot) | http://localhost:5010 | yoloAgent.local | `agent.johnson`/`pass123` (also `agent.chen`, `agent.rodriguez`) |
 | Poisoned site | http://localhost:8080 | youOnlyLiveOnce.local  |
