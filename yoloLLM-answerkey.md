@@ -173,7 +173,7 @@ recon needed.
 | | Customer bot | Agent bot |
 |---|---|---|
 | Tools | none | 8 |
-| Exploitation needs | app-layer SSRF + exfil of shared secret | just a prompt that makes the model call a tool |
+| Exploitation needs | text prompt that gets ingested by model or app-layer SSRF + exfil of shared secret | just a prompt that makes the model call a tool |
 | Who moves the attack | the attacker | the LLM itself |
 
 Same company, same secrets — completely different attack surface. That
