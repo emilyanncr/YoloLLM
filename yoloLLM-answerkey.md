@@ -108,7 +108,8 @@ YouOnlyLiveOnce.local represents a hacker-created replica of the main website.
 4. Log back in as the hacker, ask the chatbot for information on recent support tickets that mention first and last name, dob, and policy number -> you will likely be declined
 5. Craft csv file of potential prompts that can be used to elicit information and feed them into a prompt fuzzer
 6. Note ability to extract information using certain manipulation technique.
-*Note it may take several tries to get the KB successfully poisoned.  It's a matter of trial and error until you find the exact wording or phrase that works. This can also be automated.
+
+*Note it may take several tries to get the KB successfully poisoned.  It's a matter of trial and error until you find the exact wording or phrase that works. This can also be automated.*
 
 > Teaching point: contact forms / tickets are an unauthenticated write
 > channel into RAG state. This is indirect prompt injection + data
